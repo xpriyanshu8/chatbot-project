@@ -1,12 +1,103 @@
-# React + Vite
+# Chatbot Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A lightweight React + Vite chatbot web app with a simple conversational interface, message history, and instant bot replies.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Clean chat UI for user and bot messages
+- Preloaded sample conversation on startup
+- Instant bot replies using the `supersimpledev` chatbot utility
+- Auto-scrolling message list for ongoing conversations
+- Responsive, component-based React structure
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **JavaScript (ES Modules)**
+- **React 19**
+- **Vite 6**
+- **CSS3**
+- **HTML5**
+- **ESLint 9**
+
+## Installation / Setup
+
+### Prerequisites
+
+- Node.js 18+ (recommended)
+- npm 9+
+
+### Steps
+
+```bash
+git clone https://github.com/xpriyanshu8/chatbot-project.git
+cd chatbot-project
+npm install
+```
+
+## Usage
+
+### Start development server
+
+```bash
+npm run dev
+```
+
+Open the local URL shown in the terminal (typically `http://localhost:5173`).
+
+### Build for production
+
+```bash
+npm run build
+```
+
+### Preview production build locally
+
+```bash
+npm run preview
+```
+
+### Lint the project
+
+```bash
+npm run lint
+```
+
+## Project Structure
+
+```text
+chatbot-project/
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   │   ├── ChatInput.jsx
+│   │   ├── ChatMessage.jsx
+│   │   └── ChatMessages.jsx
+│   ├── App.jsx
+│   └── main.jsx
+├── index.html
+├── package.json
+└── vite.config.js
+```
+
+## Configuration / Environment Variables
+
+This project currently does **not** require any environment variables for local development.
+
+If you add API keys or backend endpoints later, create a `.env` file and use Vite-prefixed variables (for example: `VITE_API_URL=...`).
+
+## Contributing
+
+Contributions are welcome.
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Run lint/build checks
+5. Open a pull request
+
+## License
+
+No license file is currently present in this repository.
+
+If you plan to distribute or accept outside contributions, consider adding a license (for example, MIT) and updating this section.
